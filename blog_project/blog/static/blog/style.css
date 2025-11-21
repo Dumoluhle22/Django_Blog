@@ -1,0 +1,94 @@
+:root {
+    --jacarta: #3A345B;
+    --queen-pink: #F3C8DD;
+    --middle-purple: #D183A9;
+    --old-lavender: #71557A;
+    --brown-chocolate: #4B1535;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--queen-pink);
+    color: var(--jacarta);
+}
+
+/* Header */
+header {
+    background-color: var(--jacarta);
+    color: var(--queen-pink);
+    padding: 20px;
+    text-align: center;
+}
+.logo-img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.logo-text {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+}
+
+.logo-text span {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.2em;
+    color: var(--middle-purple);
+}
+
+/* Form Section */
+.form-section {
+    background-color: var(--old-lavender);
+    padding: 20px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: var(--brown-chocolate);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--jacarta);
+}
+
+/* Posts Section */
+.posts-section {
+    padding: 20px;
+}
+
+.posts-section h2 {
+    color: var(--brown-chocolate);
+}
+
+.post {
+    background-color: white;
+    border-left: 5px solid var(--middle-purple);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}

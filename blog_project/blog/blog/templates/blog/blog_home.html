@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Blog</title>
+</head>
+<body>
+    <h1>My Blog 📝</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Post title" required><br><br>
+        <textarea name="content" placeholder="Write your post..." required></textarea><br><br>
+        <button type="submit">Add Post</button>
+    </form>
+
+    <h2>All Posts</h2>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <strong>{{ post.title }}</strong><br>
+                {{ post.content }}<br>
+                <small>Posted on {{ post.created_at }}</small>
+            </li>
+            <hr>
+        {% empty %}
+            <li>No posts yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
